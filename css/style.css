@@ -34,7 +34,7 @@ img {
 
 body {
   min-height: 100vh;
-  min-width: 100%;
+  width: 100%;
   font-family: var(--ff-primary);
 }
 
@@ -48,13 +48,19 @@ body {
 /* modifier */
 .heading {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-family: var(--ff-secondary);
   color: var(--clr-primary-500);
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: 800;
   line-height: .9;
+}
+
+@media only screen and (min-width: 62em) {
+  .heading {
+    font-size: 2.4rem;
+  }
 }
 
 .btn-1 {
@@ -89,11 +95,6 @@ body {
   transition: all .2s ease-in-out;
 }
 
-@media only screen and (min-width: 62em) {
-  .heading {
-    font-size: 2.4rem;
-  }
-}
 
 header {
   padding: 1em 0;
@@ -166,11 +167,16 @@ header nav {
   font-weight: 600;
   color: #fff;
   background-color: var(--clr-primary-400);
-  width: 2rem;
-  height: 2rem;
+  width: 2.1rem;
+  height: 2.1em;
   border-radius: 50%;
   display: grid;
   place-items: center;
+}
+
+.cart-quantity:hover,
+.cart-quantiy:focus {
+  background-color: var(--clr-primary-700);
 }
 
 .hero {
@@ -386,7 +392,7 @@ header nav {
   text-align: center;
   line-height: 1.6;
   margin: 1.2em auto;
-  width: 26rem;
+  width: 21rem;
   color: var(--clr-primary-500);
 }
 
@@ -719,6 +725,7 @@ header nav {
   left: 50%;
   transform: translateX(-50%);
   margin-top: 3em;
+  text-align: center;
 }
 
 .reviews .btn-2:hover,
@@ -821,6 +828,7 @@ header nav {
   line-height: 1.3;
   max-width: 30rem;
   margin: 0 auto;
+  font-size: 1.3rem;
 }
 
 .treat-your .btn-1 {
