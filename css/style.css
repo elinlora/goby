@@ -831,6 +831,12 @@ header nav {
   font-size: 1.3rem;
 }
 
+@media only screen and (min-width: 62em) {
+  .treat-your .heading {
+    font-size: 2.4rem;
+  }
+}
+
 .treat-your .btn-1 {
   background-color: #fff;
   color: var(--clr-primary-400);
