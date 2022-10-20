@@ -27,9 +27,10 @@ img {
   
   --clr-neutral-400: hsl(0,0%,69%);
   --clr-neutral-500: hsl(326,93%,48%);
+  --clr-neutral-600: hsl(0,0%,90%);
 
   --ff-primary: 'Noto Serif Georgian', serif;
-  --ff-secondary: 'Raleway', san-serif;
+  --ff-secondary: 'Oswald', sans-serif;
 }
 
 body {
@@ -48,18 +49,18 @@ body {
 /* modifier */
 .heading {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-family: var(--ff-secondary);
   color: var(--clr-primary-500);
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: 800;
-  line-height: .9;
+  line-height: 1.1;
 }
 
 @media only screen and (min-width: 62em) {
   .heading {
-    font-size: 2.4rem;
+    font-size: 2.7rem;
   }
 }
 
@@ -99,7 +100,7 @@ body {
 header {
   padding: 1em 0;
   background-color: #fff;
-  border-bottom: 1px solid var(--clr-neutral-400);
+  border-bottom: 1px solid var(--clr-neutral-600);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -144,7 +145,7 @@ header nav {
   }
   header nav ul {
     display: flex;
-    gap: 1em;
+    gap: 1.3em;
   }
   header nav ul li i {
     margin-left: .3em;
@@ -154,7 +155,8 @@ header nav {
     font-family: var(--ff-secondary);
     text-transform: uppercase;
     font-weight: 800;
-    font-size: .8rem;
+    font-size: .9rem;
+    letter-spacing: 1px;
   }
   header nav ul li a:hover,
   header nav ul li a:focus {
@@ -1004,6 +1006,11 @@ form input::placeholder {
   place-items: center;
   border-radius: 50%;
   color: var(--clr-neutral-400);
+}
+
+.icon:hover,
+.icon:focus {
+  opacity: 75%;
 }
 
 .icon i {
